@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoobCode💻</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: salmon;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: red;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: orange;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: 50px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="skills">Skills Learned:</label>
+            <textarea id="skills" name="skills" required></textarea>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            
+      </form>
+<fieldset>
+                <legend>How did you hear about us?</legend>
+                <label class="radio"><input type="radio" name="heard" value="Friend">Friend</label>
+                <label class="radio"><input type="radio" name="heard" value="Facebook">Facebook</label>
+                <label class="radio"><input type="radio" name="heard" value="Instagram">Instagram</label>
+                <label class="radio"><input type="radio" name="heard" value="Other">Other</label>
+                <label class="radio"><input type="radio" name="heard" value="WhatsApp">WhatsApp 
+                </label>
+                <label class="radio"><input type="radio" name="heard" value="Twitter">Twitter</label>
+                </fieldset>
+            <fieldset>
+                <legend>Which services are you interested in?</legend>
+                <label><input type="checkbox" name="service" value="Web Designing">Web Design</label>
+                <label><input type="checkbox" name="service" value="Graphic Designing">Graphic Design</label>
+                <label><input type="checkbox" name="service" value="Video Editting">Video Editting</label>
+                <label><input type="checkbox" name="service" value="Android Development">Android Development</label>
+               <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
